@@ -2,16 +2,16 @@ package object FuncionesRecursivas
 {
   def maxLin(list: List[Int]): Int =
   {
-    def compararNumero(x:Int, list: List[Int]): Int =
+    def compararNumero(x:Int, auxList: List[Int]): Int =
     {
-      if(!list.tail.isEmpty)
-         if (x>list.head)
+      if(!auxList.isEmpty)
+         if (x>auxList.head)
            {
-             compararNumero(x,list.tail)
+             compararNumero(x,auxList.tail)
            }
          else
           {
-            compararNumero(list.head,list.tail)
+            compararNumero(auxList.head,auxList.tail)
           }
       else
         x
