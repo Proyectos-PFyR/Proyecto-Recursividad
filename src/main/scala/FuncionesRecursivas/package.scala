@@ -34,4 +34,32 @@ package object FuncionesRecursivas
     }
 
    */
+
+  def movsTorresHanoi(n: Int): BigInt =
+  {
+    def calMovs(x: Int,y: Int): BigInt =
+    {
+      if(x==1)
+        {
+          y
+        }
+      else
+        {
+          calMovs(x-1, 2*(y+1)-1)
+        }
+    }
+
+    if (n == 0)
+    {
+      0
+    }
+    else if (n == 1)
+    {
+      1
+    }
+    else
+    {
+      calMovs(n, 1)
+    }
+  }
 }
