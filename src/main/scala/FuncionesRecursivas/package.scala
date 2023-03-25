@@ -7,19 +7,26 @@ package object FuncionesRecursivas
       if (primerValor > segundoValor)
       {
         primerValor
-      } else
+      }
+      else
       {
         segundoValor
       }
     }
 
-    if (list.tail.isEmpty)
+    if(list.isEmpty)
+    {
+    0
+    }
+    else if (list.tail.isEmpty)
     {
       list.head
-    } else
+    }
+    else
     {
       max(list.head, maxIt(list.tail))
     }
+
   }
 
   def maxIt(list: List[Int]): Int =
