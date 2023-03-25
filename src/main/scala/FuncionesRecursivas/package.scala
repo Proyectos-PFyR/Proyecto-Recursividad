@@ -2,17 +2,39 @@ package object FuncionesRecursivas
 {
   def maxLin(list: List[Int]): Int =
   {
+    def max(primerValor: Int, segundoValor: Int): Int =
+    {
+      if (primerValor > segundoValor)
+      {
+        primerValor
+      } else
+      {
+        segundoValor
+      }
+    }
+
+    if (list.tail.isEmpty)
+    {
+      list.head
+    } else
+    {
+      max(list.head, maxIt(list.tail))
+    }
+  }
+
+  def maxIt(list: List[Int]): Int =
+  {
     def compararNumero(x:Int, auxList: List[Int]): Int =
     {
       if(!auxList.isEmpty)
-         if (x>auxList.head)
-           {
-             compararNumero(x,auxList.tail)
-           }
-         else
-          {
-            compararNumero(auxList.head,auxList.tail)
-          }
+        if (x>auxList.head)
+        {
+          compararNumero(x,auxList.tail)
+        }
+        else
+        {
+          compararNumero(auxList.head,auxList.tail)
+        }
       else
         x
     }
@@ -27,39 +49,33 @@ package object FuncionesRecursivas
     }
   }
 
-  /*
-  def maxIt(list: List[Int]): Int =
-    {
-
-    }
-
-   */
-
   def movsTorresHanoi(n: Int): BigInt =
   {
-    def calMovs(x: Int,y: Int): BigInt =
+    def calMovs(x: Int): Int =
     {
-      if(x==1)
-        {
-          y
-        }
+      if (x == 1)
+      {
+        1
+      }
       else
-        {
-          calMovs(x-1, 2*(y+1)-1)
-        }
+      {
+        operarMovs(calMovs(x-1))
+      }
+    }
+
+    def operarMovs(a: Int): Int =
+    {
+      (2*a)+1
     }
 
     if (n == 0)
     {
       0
     }
-    else if (n == 1)
-    {
-      1
-    }
     else
     {
-      calMovs(n, 1)
+      calMovs(n)
     }
   }
+
 }
