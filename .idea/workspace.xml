@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff70522-41a1-45ad-a463-0909b35325f5" name="Changes" comment="TorresDeHanoi implemente la funcion movsTorresHanoi la cual da el numero de movimientos necesarios para n piezas" />
+    <list default="true" id="eff70522-41a1-45ad-a463-0909b35325f5" name="Changes" comment="Correcciones_V1 se cambiaron ciertas funciones para implementar de mejor manera la recursividad">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/FuncionesRecursivas/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FuncionesRecursivas/package.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679344851540</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Correcciones_V1 se cambiaron ciertas funciones para implementar de mejor manera la recursividad">
+      <created>1679758381594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679758381594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +126,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
     <MESSAGE value="Commit 2 corregi un if ya que estaba comparando algo que no debia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 2 corregi un if ya que estaba comparando algo que no debia" />
+    <MESSAGE value="Correcciones_V1 se cambiaron ciertas funciones para implementar de mejor manera la recursividad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correcciones_V1 se cambiaron ciertas funciones para implementar de mejor manera la recursividad" />
   </component>
 </project>
