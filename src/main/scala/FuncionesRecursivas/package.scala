@@ -14,11 +14,7 @@ package object FuncionesRecursivas
       }
     }
 
-    if(list.isEmpty)
-    {
-    0
-    }
-    else if (list.tail.isEmpty)
+    if (list.tail.isEmpty)
     {
       list.head
     }
@@ -26,63 +22,52 @@ package object FuncionesRecursivas
     {
       max(list.head, maxIt(list.tail))
     }
-
   }
 
   def maxIt(list: List[Int]): Int =
   {
-    def compararNumero(x:Int, auxList: List[Int]): Int =
+    def max(n:Int, list: List[Int]): Int =
     {
-      if(!auxList.isEmpty)
-        if (x>auxList.head)
+      if(!list.isEmpty)
+      {
+        if (n > list.head)
         {
-          compararNumero(x,auxList.tail)
+          max(n, list.tail)
         }
         else
         {
-          compararNumero(auxList.head,auxList.tail)
+          max(list.head, list.tail)
         }
+      }
       else
-        x
+      {
+        n
+      }
     }
-
-    if(!list.isEmpty)
-    {
-      compararNumero(list.head, list.tail)
-    }
-    else
-    {
-      0
-    }
+    max(list.head, list.tail)
   }
 
   def movsTorresHanoi(n: Int): BigInt =
   {
-    def calMovs(x: Int): Int =
+    if (n == 1)
     {
-      if (x == 1)
-      {
-        1
-      }
-      else
-      {
-        operarMovs(calMovs(x-1))
-      }
-    }
-
-    def operarMovs(a: Int): Int =
-    {
-      (2*a)+1
-    }
-
-    if (n == 0)
-    {
-      0
+      1
     }
     else
     {
-      calMovs(n)
+      2 * (movsTorresHanoi(n - 1)) + 1
     }
   }
 
+  def torresHanoi(n: Int, t1: Int, t2: Int, t3: Int): List[(Int, Int)] =
+  {
+    if(n == 1)
+    {
+      List((t1, t3))
+    }
+  else
+    {
+      torresHanoi(n - 1 , t1, t3, t2) ++ List((t1, t3)) ++ torresHanoi(n - 1 , t2, t1, t3)
+    }
+  }
 }
