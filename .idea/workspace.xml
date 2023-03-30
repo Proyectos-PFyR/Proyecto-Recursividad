@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eff70522-41a1-45ad-a463-0909b35325f5" name="Changes" comment="Cambios.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/FuncionesRecursivas/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/FuncionesRecursivas/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/Pruebas.sc" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/Pruebas.sc" afterDir="false" />
-    </list>
+    <list default="true" id="eff70522-41a1-45ad-a463-0909b35325f5" name="Changes" comment="Cambios." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +78,7 @@
       <workItem from="1680027429516" duration="14261000" />
       <workItem from="1680096236347" duration="5089000" />
       <workItem from="1680132345089" duration="5311000" />
+      <workItem from="1680152581581" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Commit 1">
       <created>1679264098972</created>
