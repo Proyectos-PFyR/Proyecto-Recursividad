@@ -28,7 +28,11 @@ package object FuncionesRecursivas
   {
     def max(n:Int, list: List[Int]): Int =
     {
-      if(!list.isEmpty)
+      if(list.isEmpty)
+      {
+        n
+      }
+      else
       {
         if (n > list.head)
         {
@@ -38,10 +42,6 @@ package object FuncionesRecursivas
         {
           max(list.head, list.tail)
         }
-      }
-      else
-      {
-        n
       }
     }
     max(list.head, list.tail)
